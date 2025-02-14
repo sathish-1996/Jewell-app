@@ -1,0 +1,62 @@
+.jewell-footer{
+    width: 100%;
+    height: 100px;
+    background-color: antiquewhite;
+}
+.jewell-footer-layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.jewell-footer-text{
+    display: flex;
+
+    flex-direction: column;
+    column-gap: 20px;
+}
+.jewell-footer-text-header{
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: 'Lora';
+    font-weight: 500;
+    color: #0a0b0c;
+    
+}
+.jewell-footer-layout input{
+    width: 400px;
+    height: 50px;
+    border: 1px solid rgb(232, 156, 156) !important;
+    border-radius: 10px;
+    background-color: #fff;
+   
+   
+   
+}
+.jewell-footer-layout {
+  position: relative;
+}
+.icon {
+   
+    position: absolute;
+    right: 20px;
+  }
+::placeholder {
+    font-style:oblique;
+    font-size: 1em;
+    /* color: mintcream; */
+    /* background: thistle; */
+    padding: 15px;
+    content : "some other placeholder" !important;
+  }
+  .jewell-footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+  }
+  .jewell-footer-info-text{
+    font-size: 15px;
+    font-family: 'Lora';
+    color: inherit;
+  }
