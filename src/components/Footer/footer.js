@@ -1,7 +1,7 @@
 import React from 'react'
 import "./index.css"
 import { TfiEmail } from "react-icons/tfi";
-import { MdAlternateEmail, MdOutlineEmail } from 'react-icons/md';
+import { MdOutlineEmail } from 'react-icons/md';
 import { IoCallOutline } from 'react-icons/io5';
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
                 <div className='jewell-footer-layout'>
                     <input placeholder='Enter You Email' />
-                    <span class="icon"><MdOutlineEmail size={22} color={'grey'} /></span>
+                    <span className="icon"><MdOutlineEmail size={22} color={'grey'} /></span>
                 </div>
                 <div className='jewell-footer-info'>
                     <div>
