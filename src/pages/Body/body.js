@@ -71,7 +71,7 @@ const Body = () => {
                 The Indian wedding is an amalgamation of glorious ceremonies. Engagement, sangeeth, muhurtam, or even the reception every moment shimmers timelessly. And for every one of those moments, we've crafted priceless exquisite jewellery sets.
             </div>
             <div className='jewell-app-body-img-bg'>
-                <img src={"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw8d40a0ea/homepage/posters/gifting-banner-desktop-wb.jpg"} />
+                <img alt="" src={"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw8d40a0ea/homepage/posters/gifting-banner-desktop-wb.jpg"} />
             </div>
            <div style={{margin:"20px"}}>
            <div className='jewell-app-body-text-1' >
@@ -91,7 +91,7 @@ const Body = () => {
                         {
                             currentTodos.map((x) => (
                                 <div className='jewell-app-body-img-slider-bg-2' >
-                                    <img src={x.img} height={"300px"} />
+                                    <img alt={"nothing"} src={x.img} height={"300px"} />
 
                                 </div>
 

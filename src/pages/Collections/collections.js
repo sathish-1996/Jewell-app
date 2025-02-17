@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./index.css"
 import data from '../../components/JsonData/data'
 
 const Collections = ({ getData }) => {
-    const [value, setValue] = useState([])
+    // const [value, setValue] = useState([])
     let validData = []
     for (let index = 0; index < data.length; index++) {
         const element = data[index];
@@ -22,12 +22,12 @@ const Collections = ({ getData }) => {
 
     console.log(validData.flat(), "data")
 
-    const map = { "first": "1", "second": "2" };
+    // const map = { "first": "1", "second": "2" };
     //   console.log(getKeyByValue(map,"2"));
     return (
         <div style={{ padding: "20px" }} className='jewell-app-collections-container'>
             <div style={{ marginLeft: "45px" }} className='jewell-app-collections-nav'>
-                <a>Home</a> / Search results for: '$ {getData}'
+                <span>Home</span> / Search results for: '$ {getData}'
             </div>
             <hr />
             <div className='jewell-app-collections-text-center'>
@@ -39,7 +39,7 @@ const Collections = ({ getData }) => {
                 {validData.flat().map((x) => (
                     <div className='jewell-app-collection-alignment'>
                         <div className='jewell-app-collection-alignment-image'>
-                            <img src={x.imgURL} />
+                            <img src={x.imgURL} alt={"collection"} />
 
                         </div>
 
