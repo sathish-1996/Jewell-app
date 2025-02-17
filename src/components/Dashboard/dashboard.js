@@ -5,6 +5,7 @@ import Footer from '../Footer/footer'
 import { useHref, useNavigate } from 'react-router-dom'
 import Body from '../../pages/Body/body'
 import Collections from '../../pages/Collections/collections'
+import Cart from '../../pages/Cart/cart'
 
 const Dashboard = () => {
   const [getData, setGetData] = useState("")
@@ -12,7 +13,7 @@ const Dashboard = () => {
   const navigate = useNavigate()
   const Tabs = [{ name: "Earings", image: "https://png.pngtree.com/png-clipart/20230317/ourmid/pngtree-gold-earring-jewellery-png-image_6648640.png" }, { name: "Braceletes", image: "https://rb.gy/tqz8aq" }, { name: "Necklace", image: "https://i.pinimg.com/474x/c1/3c/10/c13c10d5d9b0f67dec418d528c205d71.jpg" }, { name: "Chains", image: "https://rb.gy/ucwz8u" }, { name: "Gold Coins", image: "https://3.imimg.com/data3/BQ/CG/MY-6837151/0-250-mg-laxmi-gold-coin-500x500.png" }]
   const handleChange = (data) => {
-   
+
     setGetData(data)
     // navigate("/collections")
 
@@ -22,7 +23,7 @@ const Dashboard = () => {
       <Header />
 
       <div className='jewell-app-body-tabs'>
-        {Tabs.map((x,i) => (
+        {Tabs.map((x, i) => (
           <div className='jewell-app-body-tabs-inner' key={i} onClick={() => handleChange(x.name)}>
             <div className='jewell-app-body-tabs-img'>
               <img src={x.image} width={"40px"} height={"40px"} />
@@ -36,7 +37,8 @@ const Dashboard = () => {
         ))}
 
       </div>
-      {getData === "" ? <Body /> : <Collections getData={getData}/>}
+      {/* {getData === "" ? <Body /> : <Collections getData={getData}/>} */}
+      <Cart />
       <Footer />
     </div>
   )
