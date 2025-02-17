@@ -70,10 +70,10 @@ const Dashboard = () => {
       <Header />
 
       <div className='jewell-app-body-tabs'>
-        {Tabs.map((x) => (
-          <div className='jewell-app-body-tabs-inner'>
+        {Tabs.map((x, i) => (
+          <div key={`${i}`} className='jewell-app-body-tabs-inner'>
             <div className='jewell-app-body-tabs-img'>
-              <img src={x.image} width={"40px"} height={"40px"}/>
+              <img src={x.image} width={"40px"} alt={x.img} height={"40px"}/>
             </div>
             <div className='jewell-app-body-tabs-text'>
               {x.name}
@@ -84,7 +84,7 @@ const Dashboard = () => {
         ))}
       </div>
       <div className='jewell-app-body-img'>
-        <img src="https://rb.gy/lm1ku2" width={"100%"} height={"550px"} />
+        <img src="https://rb.gy/lm1ku2" width={"100%"} alt={"logo"} height={"550px"} />
       </div>
 
       <div className='jewell-app-body-text'>
@@ -99,12 +99,11 @@ const Dashboard = () => {
           <MdArrowBack size={30} color='#fff' />
         </div>
         <div className='jewell-app-body-img-slider-bg'>
-
           <div className='jewell-app-body-img-slider-bg-1' >
             {
-              currentTodos.map((x) => (
-                <div className='jewell-app-body-img-slider-bg-2' >
-                  <img src={x.img} height={"300px"} />
+              currentTodos.map((x,i) => (
+                <div key={`${i}`} className='jewell-app-body-img-slider-bg-2' >
+                  <img src={x.img} alt={x.img} height={"300px"} />
 
                 </div>
 
