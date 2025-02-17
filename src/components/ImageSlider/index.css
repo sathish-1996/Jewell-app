@@ -1,0 +1,45 @@
+@import "react-slideshow-image/dist/styles.css";
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+  }
+  
+  .each-slide-effect span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+  .jewell-slide-container{
+   
+    /* border: 5px solid black; */
+    padding: 10px;
+    width: 100%;
+    height: 600px;
+  }
+  .jewell-image-slide-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    /* width: 90%; */
+    /* border: 2px solid black; */
+    overflow: hidden;
+  }
+
+  .jewell-image-slide-container img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+
+
+}
+
+.default-nav {
+margin-right: 50px;
+margin-left: 50px;
+}

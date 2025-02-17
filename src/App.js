@@ -6,6 +6,8 @@ import Dashboard from './components/Dashboard/dashboard';
 import Header from './components/Header/header';
 import Login from './page/Login';
 
+import Collections from './pages/Collections/collections';
+import 'react-slideshow-image/dist/styles.css'
 function App() {
   return (
     
@@ -15,6 +17,7 @@ function App() {
           <Route path="/" element={<Dashboard />}/>
           <Route path="/header" element={<Header />}/>
           <Route path="/login" element={<Login />}/>
+          {/* <Route path="/collections" element={<Collections />}/> */}
 
         </Routes>
       </BrowserRouter>
