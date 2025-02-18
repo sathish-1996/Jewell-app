@@ -8,20 +8,25 @@ import Login from './page/Login';
 // import Collections from './pages/Collections/collections';
 import 'react-slideshow-image/dist/styles.css'
 import Cart from './pages/Cart/cart';
+import store  from './store';
+import { Provider } from 'react-redux';
+import Collections from './pages/Collections/collections';
 function App() {
   return (
-    
-      <BrowserRouter>
 
+    <BrowserRouter>
+      <Provider store={store}>
         <Routes>
-          <Route path="/" element={<Dashboard />}/>
-          <Route path="/header" element={<Header />}/>
-          <Route path="/login" element={<Login />}/>
-          <Route path="/payment" element={<Cart />}/>
+          <Route path="/" element={<Dashboard />} />
+          {/* <Route path="/payment" element={<Cart />} /> */}
+          <Route path="/login" element={<Login />} />
+        
+          {/* <Route path="/collection" element={<Collections />} /> */}
 
         </Routes>
-      </BrowserRouter>
-
+         </Provider >
+    </BrowserRouter>
+     
    
   );
 }
