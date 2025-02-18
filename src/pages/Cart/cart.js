@@ -7,7 +7,8 @@ import { IoCloseCircleOutline } from 'react-icons/io5'
 
 const Cart = () => {
     return (
-        <div className='jewell-app-cart-page-container'>
+      <div style={{height:"600px", display:"flex", justifyContent:"center", alignItems:"center"}}>
+          <div className='jewell-app-cart-page-container'>
             <div className='jewell-app-cart-page'>
 
                 <div className='jewell-app-cart-page-outer'>
@@ -99,6 +100,7 @@ const Cart = () => {
                 </div>
             </div>
         </div>
+      </div>
     )
 }
 
