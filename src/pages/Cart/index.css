@@ -1,17 +1,19 @@
 .jewell-app-cart-page {
     margin: 20px;
-    height: 400px;
-    border: 1px solid black;
+    /* height: 400px; */
+    /* border: 1px solid black; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    height: auto;
 
 }
 
-.jewell-app-cart-page-outer {
-
-    height: 300px;
-    /* border: 1px solid; */
+.jewell-app-cart-page-container{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 20px;
+    border-radius: 20px;
+    min-height: 400px;
 }
 
 .jewell-app-cart-page-outer-inner {
@@ -21,9 +23,9 @@
 }
 
 .jewell-app-cart-page-outer-inner-align {
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
@@ -46,15 +48,134 @@
     color: #999;
 
 }
-.jewell-app-cart-page-text-align{
+
+.jewell-app-cart-page-text-align {
     padding: 20px;
     display: flex;
-    row-gap: 10px;
-    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
 }
-.jewell-app-cart-page-close-tab{
+
+.jewell-app-cart-page-close-tab {
     padding: 10px;
     display: flex;
-    justify-content: end;
-    column-gap: 20px;
+    justify-content: space-between;
+   align-items: center;
+}
+
+.jewell-app-cart-page-text-align-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.jewell-app-cart-page-text-gift {
+    margin-top: 15px;
+    color: rgb(116, 16, 16);
+    font-size: medium;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.jewell-app-cart-page-payment {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    /* height: 420px; */
+    width: 400px;
+    margin: 20px;
+}
+.jewell-app-cart-page-payment-inner{
+   
+  
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.jewell-app-cart-page-payment-inner-align {
+   
+   
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.jewell-app-cart-page-payment-inner-align-2 {
+
+ 
+   
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: end;
+}
+.jewell-footer-layout input{
+    width: 400px;
+    height: 50px;
+    border: 1px solid rgb(216, 208, 208) !important;
+    /* border-radius: 10px; */
+    background-color: #fff;
+   
+   
+   
+}
+.jewell-footer-layout {
+  position: relative;
+}
+.icon {
+   
+    position: absolute;
+    right: 20px;
+  }
+::placeholder {
+    font-style:oblique;
+    font-size: 1em;
+    /* color: mintcream; */
+    /* background: thistle; */
+    padding: 15px;
+    content : "some other placeholder" !important;
+  }
+  .jewell-app-cart-page-payment-summary{
+    font-size: 17px;
+    font-weight: 600;
+    font-style:italic;
+  }
+
+  .jewell-app-cart-page-end{
+   margin: 20px;
+    height: 70px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1500px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  }
+  .footer-cart-proceed {
+    border-radius: 1.875rem;
+    opacity: 1;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    width: 336px;
+    height: 46px;
+    text-align: center;
+    letter-spacing: .04375rem;
+    color: #fff;
+    border: none;
+    float: right;
+    background: #832729;
+    font: 400 16px "Fraunces", serif;
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+}
+.jewell-app-cart-page-payment-inner-align{
+    font-size: 16px;
+    font-family: initial;
+    font-weight: 500;
+}
+.jewell-app-cart-page-payment-inner-align-2{
+    font-size: 14px;
+    font-family: initial;
+    color: #999 ;
 }

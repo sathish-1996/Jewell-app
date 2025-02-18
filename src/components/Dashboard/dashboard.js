@@ -20,7 +20,7 @@ const Dashboard = () => {
       <Header />
 
       <div className='jewell-app-body-tabs'>
-        {Tabs.map((x, i) => (
+        {/* {Tabs.map((x, i) => (
           <div className='jewell-app-body-tabs-inner' key={i} onClick={() => handleChange(x.name)}>
             <div className='jewell-app-body-tabs-img'>
               <img src={x.image} alt={"cardimg"} width={"40px"} height={"40px"} />
@@ -31,7 +31,7 @@ const Dashboard = () => {
 
 
           </div>
-        ))}
+        ))} */}
 
       </div>
       {/* {getData === "" ? <Body /> : <Collections getData={getData}/>} */}

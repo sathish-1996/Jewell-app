@@ -16,9 +16,9 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen from-blue-500 to-teal-400 new_bg">
-    {/* <video autoPlay muted loop id="myVideo" src={require('../images/video.mp4')} /> */}
-      <div className="flex w-full max-w-4xl bg-white shadow-lg rounded-lg">
+    <div className="flex items-center justify-center min-h-screen from-blue-500 to-teal-400 new_bg" style={{ height: "600px",display: "flex", justifyContent: "center", alignItems: "center"  }}>
+      {/* <video autoPlay muted loop id="myVideo" src={require('../images/video.mp4')} /> */}
+      <div className="flex w-full max-w-4xl bg-white shadow-lg rounded-lg" style={{ height: "500px",borderRadius:"10px"}}>
         {/* Left side image */}
         <div className="w-1/2 hidden md:block">
           <img
@@ -31,7 +31,7 @@ const Login = () => {
         {/* Right side login form */}
         <div className="w-full md:w-1/2 p-8">
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">Sign In</h2>
-          <p className="text-gray-600 mb-8">Welcome back! Please enter your credentials to continue.</p>
+          <p className="text-gray-400 mb-8" style={{fontSize:"14px", fontFamily:"serif"}}>Welcome back! Please enter your credentials to continue.</p>
 
           {/* Login Form */}
           <form onSubmit={handleSubmit}>
@@ -40,7 +40,7 @@ const Login = () => {
               <input
                 type="email"
                 id="email"
-                onChange={(e)=> setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 value={email}
                 name="email"
                 className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600"
@@ -55,7 +55,7 @@ const Login = () => {
                 type="password"
                 id="password"
                 name="password"
-                onChange={(e)=> setPassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
                 value={password}
                 className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600"
                 placeholder="Enter your password"
