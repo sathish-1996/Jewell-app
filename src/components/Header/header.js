@@ -35,7 +35,9 @@ const Header = () => {
 
         <CiHeart size={30} color="#fff" />
 
-        <IoCartOutline size={30} color="#fff" />
+        <IoCartOutline size={30} color="#fff" onClick={() => {
+          navigate("/payment");
+        }} />
 
         <FiMenu size={30} color="#fff" />
       </div>

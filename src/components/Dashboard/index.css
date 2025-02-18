@@ -77,7 +77,7 @@
     }
     .jewell-app-body-tabs{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between !important;
         align-items: center;
         flex-direction: row;
         padding: 20px;

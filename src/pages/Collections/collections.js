@@ -11,6 +11,7 @@ const Collections = ({ getData }) => {
             return Object.fromEntries(Object.entries(element).filter(([k]) => getData.includes(k)));
         }
         const destructureData = handleData(element, getData)
+        console.log(element, getData,"data")
         let valuesArray = Object.values(destructureData);
 
         for (let value of valuesArray) {
@@ -20,13 +21,13 @@ const Collections = ({ getData }) => {
 
     }
 
-    console.log(validData.flat(), "data")
+   
 
     // const map = { "first": "1", "second": "2" };
     //   console.log(getKeyByValue(map,"2"));
     return (
         <div style={{ padding: "20px" }} className='jewell-app-collections-container'>
-            <div style={{ marginLeft: "45px" }} className='jewell-app-collections-nav'>
+            <div style={{ marginLeft: "20px" }} className='jewell-app-collections-nav'>
                 <span>Home</span> / Search results for: '$ {getData}'
             </div>
             <hr />
@@ -49,7 +50,7 @@ const Collections = ({ getData }) => {
                         <div className='jewell-app-collection-text-align'>
                             <div className='jewell-app-collection-text'>
 
-                                $20,000
+                              {x.price}
                             </div>
                             <div className='jewell-app-collection-text-danger'>
 

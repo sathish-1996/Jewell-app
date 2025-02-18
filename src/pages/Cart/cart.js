@@ -92,9 +92,9 @@ const Cart = () => {
                 </div>
 
             </div>
-            <div className='jewell-app-cart-page-end'>
+            <div className='jewell-app-cart-page-end' >
                 
-                    <div style={{fontWeight:"bold"}}>Total : <span>₹ 427726</span></div>
+                    <div style={{fontWeight:"bold"}}>Total <span style={{color:"grey", fontSize:"12px",fontWeight:"500", fontFamily:"sans-serif"}}>(1 Item)</span> : <span>₹ 427726</span></div>
                 <div className='footer-cart-proceed'>
                     Proceed to Checkout
                 </div>

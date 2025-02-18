@@ -17,8 +17,10 @@ import "./index.css"
 // }
 
 const slideImages = [
+    
+   
     {
-        url: 'https://media.grtjewels.com/magestore/bannerslider/images/u/n/uncut_feb_2025_social_media_grt_home_page_1900x660.jpg',
+        url: 'https://media.grtjewels.com/magestore/bannerslider/images/m/a/main_banner_diamond.jpg',
         caption: 'Slide 1'
     },
     {
@@ -26,7 +28,7 @@ const slideImages = [
         caption: 'Slide 2'
     },
     {
-        url: 'https://media.grtjewels.com/magestore/bannerslider/images/m/a/main_banner_diamond.jpg',
+        url: 'https://media.grtjewels.com/magestore/bannerslider/images/u/n/uncut_feb_2025_social_media_grt_home_page_1900x660.jpg',
         caption: 'Slide 3'
     },
 ];

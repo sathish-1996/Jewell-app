@@ -7,6 +7,7 @@ import Login from './page/Login';
 
 // import Collections from './pages/Collections/collections';
 import 'react-slideshow-image/dist/styles.css'
+import Cart from './pages/Cart/cart';
 function App() {
   return (
     
@@ -16,7 +17,7 @@ function App() {
           <Route path="/" element={<Dashboard />}/>
           <Route path="/header" element={<Header />}/>
           <Route path="/login" element={<Login />}/>
-          {/* <Route path="/collections" element={<Collections />}/> */}
+          <Route path="/payment" element={<Cart />}/>
 
         </Routes>
       </BrowserRouter>
